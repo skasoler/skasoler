@@ -1,0 +1,165 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Evaluaci\'f3n\
+Skandar Soler\
+\
+\
+\
+Proceso menu_prueba\
+	\
+	Repetir\
+		\
+		\
+		Limpiar Pantalla\
+		\
+		Escribir "menu funciones"\
+		\
+		Escribir "   1. secuencial"\
+		\
+		Escribir "   2. condicional si entonces"\
+		\
+		Escribir "   3. condicional si entonces anidado"\
+		\
+		Escribir "   4. condicional seg\'fan"\
+		\
+		Escribir "   5. repetitiva mientras"\
+		\
+		Escribir "   6. repetitiva repetir"\
+		\
+		Escribir "   7. repetitiva para"\
+		\
+		Escribir "   8. arreglo simple"\
+		\
+		Escribir "   9. arreglo bidimensional"\
+		\
+		Escribir "   10. salir"\
+		\
+		\
+		Escribir "Elija una opci\'f3n (1-9): "\
+		\
+		Leer OP\
+		\
+		\
+		Segun OP Hacer\
+			\
+			1:\
+				Definir n1,n2,n3, SumaT Como Real\
+				Definir promedio Como Real\
+				Escribir "ingrese un n\'fameros"\
+				Leer n1\
+				Escribir "ingrese 2do n\'fameros"\
+				Leer  n2\
+				Escribir "ingrese 3er n\'famero"\
+				Leer  n3\
+				SumaT=n1+n2+n3\
+				Escribir "el promedio entre los 3 n\'fameros es", SumaT/3\
+				\
+			2:\
+				Definir genero2 Como entero\
+				definir nombre2 como caracter\
+				Escribir "ingrese su nombre"\
+				Leer nombre2\
+				Escribir "ingrese el n\'famero 1 si  su g\'e9nero es Masculino o 2 si es Femenino "\
+				Leer genero2\
+				Si 1=genero2 Entonces\
+					Escribir "Vaya al ba\'f1o de hombres"\
+				SiNo\
+					Escribir "vaya al ba\'f1o de mujeres"\
+				Fin Si\
+				\
+			3:\
+				Definir genero Como entero\
+				definir nombre como caracter\
+				Escribir "ingrese su nombre"\
+				Leer nombre\
+				Escribir "ingrese el n\'famero 1 si  su g\'e9nero es Masculino o 2 si es Femenino "\
+				Leer genero\
+				Si 1=genero Entonces\
+					Escribir "Vaya al ba\'f1o de hombres"\
+					Escribir "indique el servicio que desea utilizar, presione 1 para ba\'f1o y 2 para ducha"\
+					leer servicio\
+					Si 1=servicio Entonces\
+						Escribir "el servicio de ba\'f1o tiene un costo de $250"\
+					SiNo\
+						Escribir  "el servicio de ducha tiene un costo de $2500"\
+					FinSi\
+				FinSi\
+				\
+				\
+				Si 2=genero Entonces\
+					Escribir "vaya al ba\'f1o de mujeres"\
+					Escribir "indique el servicio que desea utilizar, presione 1 para ba\'f1o y 2 para ducha"\
+					leer servicio\
+					Si 1=servicio Entonces\
+						Escribir "el servicio de ba\'f1o tiene un costo de $250"\
+					SiNo\
+						Escribir  "el servicio de ducha tiene un costo de $2500"\
+					FinSi\
+					\
+	FinSi\
+				\
+			4:\
+				Definir num, Sumt,promedio Como Real\
+				Definir contador Como Entero\
+				contador<-0\
+				num<-1\
+				Mientras num > 0 Hacer\
+					Repetir\
+						Escribir "indique alg\'fan n\'famero"\
+						Leer  num\
+						Sumt=Sumt+num\
+						contador=contador+1\
+					Hasta Que num==0\
+				Fin Mientras\
+				promedio=Sumt/(contador-1)\
+				Escribir  "el promedio de todos los n\'fameros es", promedio\
+			6:\
+				Definir juan, Respuesta Como Caracter\
+				Definir contador, sumaT Como Entero\
+				contador<-0\
+				Repetir\
+					Escribir "ingrese un nombre que comience con la letra J"\
+					Leer Respuesta\
+					contador=contador+1\
+				Hasta Que Respuesta="juan"\
+				escribir "ganaste"\
+				Escribir "el n\'famero de intentos fue de", contador-1\
+				\
+			7:\
+				\
+				Escribir "No disponible"\
+				\
+				\
+			8:\
+				\
+				Escribir "No disponible"\
+			9:\
+				\
+				Escribir "No disponible"\
+\
+\
+				\
+			10:\
+				\
+				Escribir "Gracias, vuelva pronto"\
+				\
+			De otro modo:\
+				\
+				Escribir "Opci\'f3n no v\'e1lida"\
+				\
+				\
+		FinSegun\
+		\
+		Escribir "Presione enter para continuar"\
+		\
+		Esperar Tecla\
+		\
+	Hasta Que OP=10\
+\
+FinProceso\
+}
